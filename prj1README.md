@@ -20,3 +20,10 @@
   - **(Q9):**
 - Makefile
   - Compiles all .C files into executables
+
+# Problem 10 (Time Information)
+
+| Sequential | Forked (Process) | Pthread |
+| ---------- | ---------------- | ------- |
+| Blank      | Blank            | Blank   |
+| Blank      | Blank            | Blank   |
