@@ -3,7 +3,7 @@
 - MyCompress.c
   - **(Q1):** Compresses a copy of a file (Made of 1's and 0's) using System calls. Needs an input (.TXT) in order to compress and outputs a .TXT file
 - MyDecompress.c
-  - **(Q2):** Reads a compressed file produced by MyCompress.c and outputs a decompressed version
+  - **(Q2):** Reads a compressed file produced by MyCompress.c and outputs a decompressed output file
 - ForkCompress.c
   - **(Q3):** Uses the FORK() system call to create a new process and uses EXECL() to run and execute MyCompress.c then uses WAIT() for it to finish.
 - PipeCompress.c
