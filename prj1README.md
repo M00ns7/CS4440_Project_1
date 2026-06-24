@@ -1,7 +1,7 @@
 # Files & Descriptions:
 
 - MyCompress.c
-  - **(Q1):** Compresses a copy of a file (Made of 1's and 0's) using System calls
+  - **(Q1):** Compresses a copy of a file (Made of 1's and 0's) using System calls. Needs an input (.TXT) in order to compress and outputs a .TXT file
 - MyDecompress.c
   - **(Q2):** Reads a compressed file produced by MyCompress.c and outputs a decompressed version
 - ForkCompress.c
