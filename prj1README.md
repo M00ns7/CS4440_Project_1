@@ -31,7 +31,3 @@
 | (i) Sequential (**MyCompress.c**)                    | (ii)Forked (Process)(**ParFork.c**) | (iii) Pthread (**ParThread.c**) |
 | ---------------------------------------------------- | ----------------------------------- | ------------------------------- |
 | Runtime: 0.21s user 2.10s system 99% cpu 2.336 total | Runtime:                            | Runtime:                        |
-|                                                      |                                     |                                 |
-|                                                      |                                     |                                 |
-|                                                      |                                     |                                 |
-|                                                      |                                     |                                 |
