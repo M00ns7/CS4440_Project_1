@@ -18,12 +18,20 @@
   - **(Q8):** Extends upon MoreShell.C to execute commands connected by pipes **'|'**
 - ParThread.c
   - **(Q9):**
+
+# Other Files:
+
 - Makefile
   - Compiles all .C files into executables
+- Input.txt
+  - Large 50.4 MB File of '0's and '1's
 
 # Problem 10 (Time Information)
 
-| Sequential | Forked (Process) | Pthread |
-| ---------- | ---------------- | ------- |
-| Blank      | Blank            | Blank   |
-| Blank      | Blank            | Blank   |
+| (i) Sequential (**MyCompress.c**)                    | (ii)Forked (Process)(**ParFork.c**) | (iii) Pthread (**ParThread.c**) |
+| ---------------------------------------------------- | ----------------------------------- | ------------------------------- |
+| Runtime: 0.21s user 2.10s system 99% cpu 2.336 total | Runtime:                            | Runtime:                        |
+|                                                      |                                     |                                 |
+|                                                      |                                     |                                 |
+|                                                      |                                     |                                 |
+|                                                      |                                     |                                 |
