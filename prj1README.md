@@ -25,6 +25,8 @@
   - Compiles all .C files into executables
 - Input.txt
   - Large 50.4 MB File of '0's and '1's
+- Typescript
+  - Shows the working of all the programs for correct input as well as gracefull exits on error input
 
 # Problem 10 (Time Information)
 
