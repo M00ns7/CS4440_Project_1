@@ -2,7 +2,7 @@
 
 - MyCompress.c
   - **(Q1):** Compresses a copy of a file (Made of 1's and 0's) using System calls. Needs an input (.TXT) in order to compress and outputs a .TXT file
-- MyDecompress.c
+- MyDecompress.
   - **(Q2):** Reads a compressed file produced by MyCompress.c and outputs a decompressed output file
 - ForkCompress.c
   - **(Q3):** Uses the FORK() system call to create a new process and uses EXECL() to run and execute MyCompress.c then uses WAIT() for it to finish.
@@ -17,7 +17,7 @@
 - DupShell.c
   - **(Q8):** Extends upon MoreShell.C to execute commands connected by pipes **'|'**
 - ParThread.c
-  - **(Q9):**
+  - **(Q9):** Uses the POSIX threads library to compress a large file by using the thread model for concurrency
 
 # Other Files:
 
@@ -30,6 +30,12 @@
 
 # Problem 10 (Time Information)
 
-| (i) Sequential (**MyCompress.c**)                    | (ii)Forked (Process)(**ParFork.c**) | (iii) Pthread (**ParThread.c**) |
-| ---------------------------------------------------- | ----------------------------------- | ------------------------------- |
-| Runtime: 0.21s user 2.10s system 99% cpu 2.336 total | Runtime:                            | Runtime:                        |
+- Uses the 50.4 mb file as input to test run time
+
+| Run Time Information        |                                                          |
+| --------------------------- | -------------------------------------------------------- |
+| (i) Sequential (MyCompress) | - Runtime 1: 0.21s user 2.10s system 99% cpu 2.336 total |
+|                             | - Runtime 2: 0.22s user 2.09s system 99% cpu 2.331 total |
+|                             | - Runtime 3: 0.22s user 2.53s system 99% cpu 2.774 total |
+| (ii) Forked (ParFork)       |                                                          |
+| (iii) PThread (Parthread)   |                                                          |
