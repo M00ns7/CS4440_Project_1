@@ -30,10 +30,10 @@
 
 # Problem 10 (Time Information)
 
-- Uses the 50.4 mb file as input to test run time
+- Uses the 50.4 mb Input file to test run time
 
-| Run Time Information            |                                                                                                                                                                                                          |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **(i) Sequential (MyCompress)** | <ul><li>Runtime 1: 0.21s user 2.10s system 99% cpu 2.336 total</li><li>Runtime 2: 0.22s user 2.09s system 99% cpu 2.331 total </li><li>Runtime 3: 0.22s user 2.53s system 99% cpu 2.774 total </li></ul> |
-| **(ii) Forked (ParFork)**       | <ul><li>INSERT</li><li>INSERT</li><li>INSERT </li></ul>                                                                                                                                                  |
-| **(iii) PThread (ParThread)**   | <ul><li>INSERT</li><li>INSERT</li><li>INSERT</li></ul>                                                                                                                                                   |
+| Run Time Information                                 |                                                                                                                                                                                                                  |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **(i) Sequential (MyCompress)**                      | <ul><li>Runtime 1: 0.21s user 2.10s system 99% cpu 2.336 total</li><li>Runtime 2: 0.22s user 2.09s system 99% cpu 2.331 total </li><li>Runtime 3: 0.22s user 2.53s system 99% cpu 2.774 total </li></ul>         |
+| **(ii) Forked (ParFork)**                            | <ul><li>INSERT</li><li>INSERT</li><li>INSERT </li></ul>                                                                                                                                                          |
+| **(iii) PThread (ParThread) (Number of threads: 4)** | <ul><li>Runtime 1: 12.67s user 0.05s system 389% cpu 3.264 total </li><li> Runtime 2: 12.63s user 0.03s system 389% cpu 3.248 total </li><li> Runtime 3: 12.64s user 0.04s system 390% cpu 3.250 total</li></ul> |
