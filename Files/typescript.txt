@@ -1,0 +1,161 @@
+Script started on Sat Jun 27 20:30:49 2026
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004hmmake clean[?2004l
+rm -f DupeShell ForkCompress MiniShell MoreShell MyCompress MyDecompress ParFork ParThread PipeCompress
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004hmmake[?2004l
+gcc -Wall -Wextra -g -o DupeShell DupeShell.c 
+gcc -Wall -Wextra -g -o ForkCompress ForkCompress.c 
+gcc -Wall -Wextra -g -o MiniShell MiniShell.c 
+gcc -Wall -Wextra -g -o MoreShell MoreShell.c 
+gcc -Wall -Wextra -g -o MyCompress MyCompress.c 
+gcc -Wall -Wextra -g -o MyDecompress MyDecompress.c 
+gcc -Wall -Wextra -g -o ParFork ParFork.c 
+gcc -Wall -Wextra -g -o ParThread ParThread.c -pthread
+gcc -Wall -Wextra -g -o PipeCompress PipeCompress.c 
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./MyCompress smallinput.txt compres[7ms[7med_small.txt[27m[K[A[32C[27m.[27m/[27mM[27my[27mC[27mo[27mm[27mp[27mr[27me[27ms[27ms[27m [27ms[27mm[27ma[27ml[27ml[27mi[27mn[27mp[27mu[27mt[27m.[27mt[27mx[27mt[27m [27mc[27mo[27mm[27mp[27mr[27me[27mss[27me[27md[27m_[27ms[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt[?2004l
+Compression complete. 'smallinput.txt' -> 'compressed_small.txt'
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mcat compressed_small.txt[27m[24D[27mc[27ma[27mt[27m [27mc[27mo[27mm[27mp[27mr[27me[27ms[27ms[27me[27md[27m_[27ms[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt[?2004l
++24+ -24-
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./MyDecompress compressed_small.txt[7m [7mdecompressed_small.txt[27m[K[A[22C[27m.[27m/[27mM[27my[27mD[27me[27mc[27mo[27mm[27mp[27mr[27me[27ms[27ms[27m [27mc[27mo[27mm[27mp[27mr[27me[27ms[27ms[27me[27md[27m_[27ms[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt [27md[27me[27mc[27mo[27mm[27mp[27mr[27me[27ms[27ms[27me[27md[27m_[27ms[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt[?2004l
+Decompression complete. 'compressed_small.txt' -> 'decompressed_small.txt'
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mcat decompressed_small.txt[27m[26D[27mc[27ma[27mt[27m [27md[27me[27mc[27mo[27mm[27mp[27mr[27me[27ms[27ms[27me[27md[27m_[27ms[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt[?2004l
+111111111111111111111111 000000000000000000000000
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h
+[7m./ForkCompress smallinput.txt fork_small.txt[27m[K[27m.[27m/[27mF[27mo[27mr[27mk[27mC[27mo[27mm[27mp[27mr[27me[27ms[27ms[27m [27ms[27mm[27ma[27ml[27ml[27mi[27mn[27mp[27mu[27mt[27m.[27mt[27mx[27mt[27m [27mf[27mo[27mr[27mk[27m_[27ms[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt[?2004l
+Compression complete. 'smallinput.txt' -> 'fork_small.txt'
+Child Complete[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mcat fork_small.txt[27m[18D[27mc[27ma[27mt[27m [27mf[27mo[27mr[27mk[27m_[27ms[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt[?2004l
++24+ -24-
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./PipeCompress smallinput.txt pipe_[7ms[7mmall.txt[27m[K[A[36C[27m.[27m/[27mP[27mi[27mp[27me[27mC[27mo[27mm[27mp[27mr[27me[27ms[27ms[27m [27ms[27mm[27ma[27ml[27ml[27mi[27mn[27mp[27mu[27mt[27m.[27mt[27mx[27mt[27m [27mp[27mi[27mp[27me[27m_s[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt[?2004l
+PipeCompress Complete
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mcat pipe_small.txt[27m
+[K[A[45C[27mc[27ma[27mt[27m [27mp[27mi[27mp[27me[27m_[27ms[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt[1B[K[?2004l
++24+ -24-
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./ParFork smallinput.txt parfork_sm[7ma[7mll.txt 4[27m[K[A[36C[27m.[27m/[27mP[27ma[27mr[27mF[27mo[27mr[27mk[27m [27ms[27mm[27ma[27ml[27ml[27mi[27mn[27mp[27mu[27mt[27m.[27mt[27mx[27mt[27m [27mp[27ma[27mr[27mf[27mo[27mr[27mk[27m_[27ms[27mma[27ml[27ml[27m.[27mt[27mx[27mt[27m [27m4[?2004l
+ParFork Complete
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mcat parfork_small.txt[27m[21D[27mc[27ma[27mt[27m [27mp[27ma[27mr[27mf[27mo[27mr[27mk[27m_[27ms[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt[?2004l
+111111111111111111111111 000000000000000000000000
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./ParThread smallinput.txt pthread_[7ms[7mmall.txt 4[27m[K[A[34C[27m.[27m/[27mP[27ma[27mr[27mT[27mh[27mr[27me[27ma[27md[27m [27ms[27mm[27ma[27ml[27ml[27mi[27mn[27mp[27mu[27mt[27m.[27mt[27mx[27mt[27m [27mp[27mt[27mh[27mr[27me[27ma[27md[27m_s[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt[27m [27m4[?2004l
+Compression completed using 4 threads.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mcat pthread_small.txt[27m[21D[27mc[27ma[27mt[27m [27mp[27mt[27mh[27mr[27me[27ma[27md[27m_[27ms[27mm[27ma[27ml[27ml[27m.[27mt[27mx[27mt[?2004l
+111111111111111111111111 000000000000000000000000
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./MyCompress[27m[12D[27m.[27m/[27mM[27my[27mC[27mo[27mm[27mp[27mr[27me[27ms[27ms[?2004l
+Usage: ./MyCompress <source_file> <destination_file>
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./ForkCompress[27m[14D[27m.[27m/[27mF[27mo[27mr[27mk[27mC[27mo[27mm[27mp[27mr[27me[27ms[27ms[?2004l
+Usage: ./ForkCompress <source file> <destination file>/n[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./PipeCompress[27m[14D[27m.[27m/[27mP[27mi[27mp[27me[27mC[27mo[27mm[27mp[27mr[27me[27ms[27ms[?2004l
+Usage: ./PipeCompress <source file> <destination file>
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./ParFork[27m[9D[27m.[27m/[27mP[27ma[27mr[27mF[27mo[27mr[27mk[?2004l
+Usage: ./ParFork <input> <output> <num_processes>
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./ParThread[27m[11D[27m.[27m/[27mP[27ma[27mr[27mT[27mh[27mr[27me[27ma[27md[?2004l
+Usage: ./ParThread sourcefile destinationfile num_threads
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./MiniShell[27m[11D[27m.[27m/[27mM[27mi[27mn[27mi[27mS[27mh[27me[27ml[27ml[?2004l
+MiniShell> pwd
+/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files
+MiniShell> date
+Sat Jun 27 20:33:11 PDT 2026
+MiniShell> exit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./MoreShell[27m[11D[27m.[27m/[27mM[27mo[27mr[27me[27mS[27mh[27me[27ml[27ml[?2004l
+MoreShell> ls -l
+total 216712
+-rwxr-xr-x  1 esmeraldaamado  staff     34536 Jun 27 20:31 DupeShell
+-rw-r--r--  1 esmeraldaamado  staff      3278 Jun 27 20:20 DupeShell.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 DupeShell.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     33936 Jun 27 20:31 ForkCompress
+-rw-r--r--  1 esmeraldaamado  staff       961 Jun 27 20:20 ForkCompress.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 ForkCompress.dSYM
+-rw-r--r--  1 esmeraldaamado  staff       745 Jun 27 20:20 Makefile
+-rwxr-xr-x  1 esmeraldaamado  staff     34312 Jun 27 20:31 MiniShell
+-rw-r--r--  1 esmeraldaamado  staff      1488 Jun 27 20:20 MiniShell.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 MiniShell.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34360 Jun 27 20:31 MoreShell
+-rw-r--r--  1 esmeraldaamado  staff      1870 Jun 27 20:20 MoreShell.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 MoreShell.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34920 Jun 27 20:31 MyCompress
+-rw-r--r--  1 esmeraldaamado  staff     10009 Jun 27 20:20 MyCompress.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 MyCompress.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34752 Jun 27 20:31 MyDecompress
+-rw-r--r--  1 esmeraldaamado  staff      7618 Jun 27 20:20 MyDecompress.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 MyDecompress.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34856 Jun 27 20:31 ParFork
+-rw-r--r--  1 esmeraldaamado  staff      4746 Jun 27 20:20 ParFork.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 ParFork.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34888 Jun 27 20:31 ParThread
+-rw-r--r--  1 esmeraldaamado  staff      4692 Jun 27 20:20 ParThread.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 ParThread.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34448 Jun 27 20:31 PipeCompress
+-rw-r--r--  1 esmeraldaamado  staff      4930 Jun 27 20:20 PipeCompress.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 PipeCompress.dSYM
+-rw-r--r--  1 esmeraldaamado  staff   2786667 Jun 27 20:21 compressed.txt
+-rw-r--r--  1 esmeraldaamado  staff        10 Jun 27 20:31 compressed_small.txt
+-rw-r--r--  1 esmeraldaamado  staff  50376319 Jun 27 20:23 decompressed.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:31 decompressed_small.txt
+-rw-r--r--  1 esmeraldaamado  staff   2786667 Jun 27 20:22 fork.txt
+-rw-r--r--  1 esmeraldaamado  staff        10 Jun 27 20:31 fork_small.txt
+-rw-r--r--  1 esmeraldaamado  staff  50376319 Jun 27 20:20 input.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:28 parfork.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:32 parfork_small.txt
+-rw-r--r--  1 esmeraldaamado  staff   2786667 Jun 27 20:22 pipe.txt
+-rw-r--r--  1 esmeraldaamado  staff        10 Jun 27 20:32 pipe_small.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:28 pthread.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:32 pthread_small.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:28 smallinput.txt
+-rw-r--r--  1 esmeraldaamado  staff     10891 Jun 27 20:33 typescript.txt
+MoreShell> ls -l
+total 216712
+-rwxr-xr-x  1 esmeraldaamado  staff     34536 Jun 27 20:31 DupeShell
+-rw-r--r--  1 esmeraldaamado  staff      3278 Jun 27 20:20 DupeShell.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 DupeShell.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     33936 Jun 27 20:31 ForkCompress
+-rw-r--r--  1 esmeraldaamado  staff       961 Jun 27 20:20 ForkCompress.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 ForkCompress.dSYM
+-rw-r--r--  1 esmeraldaamado  staff       745 Jun 27 20:20 Makefile
+-rwxr-xr-x  1 esmeraldaamado  staff     34312 Jun 27 20:31 MiniShell
+-rw-r--r--  1 esmeraldaamado  staff      1488 Jun 27 20:20 MiniShell.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 MiniShell.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34360 Jun 27 20:31 MoreShell
+-rw-r--r--  1 esmeraldaamado  staff      1870 Jun 27 20:20 MoreShell.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 MoreShell.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34920 Jun 27 20:31 MyCompress
+-rw-r--r--  1 esmeraldaamado  staff     10009 Jun 27 20:20 MyCompress.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 MyCompress.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34752 Jun 27 20:31 MyDecompress
+-rw-r--r--  1 esmeraldaamado  staff      7618 Jun 27 20:20 MyDecompress.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 MyDecompress.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34856 Jun 27 20:31 ParFork
+-rw-r--r--  1 esmeraldaamado  staff      4746 Jun 27 20:20 ParFork.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 ParFork.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34888 Jun 27 20:31 ParThread
+-rw-r--r--  1 esmeraldaamado  staff      4692 Jun 27 20:20 ParThread.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 ParThread.dSYM
+-rwxr-xr-x  1 esmeraldaamado  staff     34448 Jun 27 20:31 PipeCompress
+-rw-r--r--  1 esmeraldaamado  staff      4930 Jun 27 20:20 PipeCompress.c
+drwxr-xr-x  3 esmeraldaamado  staff        96 Jun 27 20:20 PipeCompress.dSYM
+-rw-r--r--  1 esmeraldaamado  staff   2786667 Jun 27 20:21 compressed.txt
+-rw-r--r--  1 esmeraldaamado  staff        10 Jun 27 20:31 compressed_small.txt
+-rw-r--r--  1 esmeraldaamado  staff  50376319 Jun 27 20:23 decompressed.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:31 decompressed_small.txt
+-rw-r--r--  1 esmeraldaamado  staff   2786667 Jun 27 20:22 fork.txt
+-rw-r--r--  1 esmeraldaamado  staff        10 Jun 27 20:31 fork_small.txt
+-rw-r--r--  1 esmeraldaamado  staff  50376319 Jun 27 20:20 input.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:28 parfork.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:32 parfork_small.txt
+-rw-r--r--  1 esmeraldaamado  staff   2786667 Jun 27 20:22 pipe.txt
+-rw-r--r--  1 esmeraldaamado  staff        10 Jun 27 20:32 pipe_small.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:28 pthread.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:32 pthread_small.txt
+-rw-r--r--  1 esmeraldaamado  staff        50 Jun 27 20:28 smallinput.txt
+-rw-r--r--  1 esmeraldaamado  staff     10891 Jun 27 20:33 typescript.txt
+MoreShell> pwd
+/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files
+MoreShell> exit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./DupeShell[27m[11D[27m.[27m/[27mD[27mu[27mp[27me[27mS[27mh[27me[27ml[27ml[?2004l
+DupShell> ls -l | wc
+      44     389    3140
+DupShell> exit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/Desktop/CS4440_Project_1/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mexit[27m[27me[27mx[27mi[27mt[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...none found.
+
+Script done on Sat Jun 27 20:34:00 2026
