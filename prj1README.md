@@ -32,10 +32,8 @@
 
 - Uses the 50.4 mb file as input to test run time
 
-| Run Time Information        |                                                          |
-| --------------------------- | -------------------------------------------------------- |
-| (i) Sequential (MyCompress) | - Runtime 1: 0.21s user 2.10s system 99% cpu 2.336 total |
-|                             | - Runtime 2: 0.22s user 2.09s system 99% cpu 2.331 total |
-|                             | - Runtime 3: 0.22s user 2.53s system 99% cpu 2.774 total |
-| (ii) Forked (ParFork)       |                                                          |
-| (iii) PThread (Parthread)   |                                                          |
+| Run Time Information            |                                                                                                                                                                                                          |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **(i) Sequential (MyCompress)** | <ul><li>Runtime 1: 0.21s user 2.10s system 99% cpu 2.336 total</li><li>Runtime 2: 0.22s user 2.09s system 99% cpu 2.331 total </li><li>Runtime 3: 0.22s user 2.53s system 99% cpu 2.774 total </li></ul> |
+| **(ii) Forked (ParFork)**       | <ul><li>INSERT</li><li>INSERT</li><li>INSERT </li></ul>                                                                                                                                                  |
+| **(iii) PThread (ParThread)**   | <ul><li>INSERT</li><li>INSERT</li><li>INSERT</li></ul>                                                                                                                                                   |
