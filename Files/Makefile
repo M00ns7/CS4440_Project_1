@@ -4,23 +4,29 @@
 # an executable for each C file. 
 
 
-# C Compiler used 
+
+# C compiler used
 CC = gcc
+ 
 # Flags for the compiler
 CFLAGS = -Wall -Wextra -g
  
-# Finds every .C File in the current directory (Files) and names the executables. 
-Source = $(wildcard *.c)
-Executables = $(Source:.c=)
+# Finds every .c file in the Files Directory, and turns each file into an executable 
+SOURCES = $(wildcard *.c)
+EXECUTABLES = $(SOURCES:.c=)
  
-# Builds all executables 
-all: $(Executables)
+# Builds every executable in the Files Folder.
+all: $(EXECUTABLES)
+ 
 
-# Builds any executable from its matching .c file. 
 %: %.c
 	$(CC) $(CFLAGS) -o $@ $< $(LDLIBS)
  
-# Remove every executable that was built 
+# For Pthread, link the POSIX threads library.
+ParThread: LDLIBS = -pthread
+ 
+# Remove every executable that was built.
 clean:
-	rm -f $(Executables)
+	rm -f $(EXECUTABLES)
+
 .PHONY: all clean
